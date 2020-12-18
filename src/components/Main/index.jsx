@@ -13,7 +13,7 @@ export default ({ coord }) => {
   const fetchData = () => {
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=c290cea6a6339b23c4772b6012ecd124`
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.REACT_APP_APIKEY}`
       )
       .then((response) => {
         const { daily, hourly, current } = response.data;
