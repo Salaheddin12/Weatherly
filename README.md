@@ -1,4 +1,4 @@
-## ⛅ Weathely 
+## ⛅ Weatherly 
 
 I made this smple react app as I was learning React using [Create React App](https://github.com/facebook/create-react-app).
 
