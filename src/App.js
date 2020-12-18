@@ -37,13 +37,13 @@ function App() {
           icon: data.weather[0].icon,
         });
         setCoord(data.coord);
-        setLoading(false);
       });
+      setLoading(false);
   };
 
   useEffect(() => {
     fetchData();
-  }, [data.city]);
+  }, [data.city,loading]);
 
   return (
     <Container className="App">
