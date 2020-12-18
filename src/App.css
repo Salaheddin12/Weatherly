@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&family=Merriweather+Sans:ital@1&family=Merriweather:ital,wght@0,300;1,300;1,400&family=Oxygen:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@700&family=Montserrat:wght@500&family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  margin: 0;
+  color: #17202a;
+  padding: 0;
+}
+.App {
+  width: 100%;
+  max-width: 100%;
+}
