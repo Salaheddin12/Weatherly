@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c367807bb51f8cb573d7aeb7e242a8b1",
+    "revision": "a708b036b340a21d8c048f2322f3c0a5",
     "url": "/Weatherly/index.html"
   },
   {
-    "revision": "9744f3644a292b8a4e82",
+    "revision": "48b115a37492aee79383",
     "url": "/Weatherly/static/css/main.6c79fec5.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Weatherly/static/js/2.146fd9ba.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9744f3644a292b8a4e82",
-    "url": "/Weatherly/static/js/main.790f2a12.chunk.js"
+    "revision": "48b115a37492aee79383",
+    "url": "/Weatherly/static/js/main.955b2c0a.chunk.js"
   },
   {
     "revision": "6b6f5c4f8cbe652f8772",

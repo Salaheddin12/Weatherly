@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Weatherly/static/css/main.6c79fec5.chunk.css",
-    "main.js": "/Weatherly/static/js/main.790f2a12.chunk.js",
-    "main.js.map": "/Weatherly/static/js/main.790f2a12.chunk.js.map",
+    "main.js": "/Weatherly/static/js/main.955b2c0a.chunk.js",
+    "main.js.map": "/Weatherly/static/js/main.955b2c0a.chunk.js.map",
     "runtime-main.js": "/Weatherly/static/js/runtime-main.7401531d.js",
     "runtime-main.js.map": "/Weatherly/static/js/runtime-main.7401531d.js.map",
     "static/js/2.146fd9ba.chunk.js": "/Weatherly/static/js/2.146fd9ba.chunk.js",
     "static/js/2.146fd9ba.chunk.js.map": "/Weatherly/static/js/2.146fd9ba.chunk.js.map",
     "index.html": "/Weatherly/index.html",
-    "precache-manifest.2d2f4f32b2b71a129aaede2f155bde0e.js": "/Weatherly/precache-manifest.2d2f4f32b2b71a129aaede2f155bde0e.js",
+    "precache-manifest.58ccb8fe8642688dc98939dcd84746ea.js": "/Weatherly/precache-manifest.58ccb8fe8642688dc98939dcd84746ea.js",
     "service-worker.js": "/Weatherly/service-worker.js",
     "static/css/main.6c79fec5.chunk.css.map": "/Weatherly/static/css/main.6c79fec5.chunk.css.map",
     "static/js/2.146fd9ba.chunk.js.LICENSE.txt": "/Weatherly/static/js/2.146fd9ba.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7401531d.js",
     "static/js/2.146fd9ba.chunk.js",
     "static/css/main.6c79fec5.chunk.css",
-    "static/js/main.790f2a12.chunk.js"
+    "static/js/main.955b2c0a.chunk.js"
   ]
 }
