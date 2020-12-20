@@ -5,7 +5,6 @@ import Sun from "./Cards/Sun";
 import styled from "styled-components";
 
 export default ({ current }) => {
-  console.log("current", current);
   const { sunrise, sunset, uvi, visibility, wind_speed, rain } = current;
   const rainValue = rain ? rain["1h"] : 0;
 

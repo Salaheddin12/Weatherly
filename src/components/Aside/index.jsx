@@ -5,13 +5,13 @@ import Container, { Loading } from "./styles";
 export default ({ details, handleSubmit, loading }) => {
   return (
     <Container>
+      <Search onSubmit={handleSubmit} />
       {loading ? (
         <Loading>
           <h1> loading ...</h1>
         </Loading>
       ) : (
         <>
-          <Search onSubmit={handleSubmit} />
           <Temperature data={details} />
         </>
       )}

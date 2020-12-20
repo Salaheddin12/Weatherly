@@ -3,7 +3,6 @@ import styled from "styled-components";
 import formateDate from "../../../utils/index";
 
 export default ({ dailyData }) => {
-  console.log("data", dailyData);
   const { weather, temp, dt } = dailyData;
   const { icon } = weather[0];
   const { min, max } = temp;
