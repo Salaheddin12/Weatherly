@@ -43,7 +43,7 @@ function App() {
 
   useEffect(() => {
     fetchData();
-  }, [data.city,loading]);
+  }, [data.city]);
 
   return (
     <Container className="App">

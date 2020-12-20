@@ -11,9 +11,7 @@ export default ({ details, handleSubmit, loading }) => {
           <h1> loading ...</h1>
         </Loading>
       ) : (
-        <>
           <Temperature data={details} />
-        </>
       )}
     </Container>
   );
