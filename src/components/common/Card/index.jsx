@@ -2,21 +2,34 @@ import React from "react";
 import styled from "styled-components";
 import formateDate from "../../../utils/index";
 
-export default ({ dailyData }) => {
-  const { weather, temp, dt } = dailyData;
+export default ({ Data, forcast }) => {
+  const { weather, temp, dt } = Data;
   const { icon } = weather[0];
-  const { min, max } = temp;
+  if (forcast === "DAILY") {
+    const { min, max } = temp;
+    return (
+      <Card>
+        <span>{formateDate(dt, "DAY")}</span>
+        <img
+          width="100px"
+          src={`http://openweathermap.org/img/wn/${icon}@4x.png`}
+          alt="icon"
+        />
+        <h6>
+          {min}° <span>{max}°</span>
+        </h6>
+      </Card>
+    );
+  }
   return (
     <Card>
-      <span>{formateDate(dt, "DAY")}</span>
+      <span>{formateDate(dt, "HOURS")}</span>
       <img
         width="100px"
         src={`http://openweathermap.org/img/wn/${icon}@4x.png`}
         alt="icon"
       />
-      <h6>
-        {min}° <span>{max}°</span>
-      </h6>
+      <h6>{temp}°</h6>
     </Card>
   );
 };

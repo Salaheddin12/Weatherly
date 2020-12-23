@@ -6,14 +6,26 @@ import Highlights from "../Highlights";
 import styled from "styled-components";
 export default ({ coord }) => {
   const { lat, lon } = coord;
-  const [dailyData, setDailyData] = useState([]);
+
   const [currentData, setCurrentData] = useState({});
 
+  const [dailyData, setDailyData] = useState([]);
   const [hourlyData, setHourlyData] = useState([]);
+  const [forcast, setForcast] = useState("DAILY");
+
+  const [units, setUnits] = useState("metric");
+
+  const onMetricChange = (value) => {
+    setUnits(value);
+  };
+  const setForcastFilter = (value) => {
+    setForcast(value);
+  };
+
   const fetchData = () => {
     axios
       .get(
-        `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.REACT_APP_APIKEY}`
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&units=${units}&appid=${process.env.REACT_APP_APIKEY}`
       )
       .then((response) => {
         const { daily, hourly, current } = response.data;
@@ -24,11 +36,16 @@ export default ({ coord }) => {
   };
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [units]);
   return (
     <Main>
-      <Header />
-      <Forcast daily={dailyData} hourly={hourlyData} />
+      <Header
+        forcast={forcast}
+        units={units}
+        onMetricChange={onMetricChange}
+        onForcastChange={setForcastFilter}
+      />
+      <Forcast forcast={forcast} daily={dailyData} hourly={hourlyData} />
       <Highlights current={currentData} />
     </Main>
   );

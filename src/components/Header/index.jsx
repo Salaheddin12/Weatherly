@@ -1,16 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
+
 import styled from "styled-components";
 
-export default () => {
+export default ({ onForcastChange, onMetricChange, units ,forcast }) => {
+
+  const onSelect = (Value) => {
+    onForcastChange(Value);
+  };
+
+  const activeUnitStyle = { backgroundColor: "#17202a", color: "white" };
+  const listStyle = { borderBottom: "2px solid #17202a" };
   return (
     <Container>
       <Forcast>
-        <li>Today</li>
-        <li style={{ borderBottom: "2px solid #17202a" }}>Week</li>
+        <li
+          onClick={() => onSelect("HOURLY")}
+          style={forcast === "HOURLY" ? listStyle : null}
+        >
+          Today
+        </li>
+        <li
+          onClick={() => onSelect("DAILY")}
+          style={forcast === "DAILY" ? listStyle : null}
+        >
+          Week
+        </li>
       </Forcast>
       <Units>
-        <li>°F</li>
-        <li>°C</li>
+        <li
+          onClick={() => onMetricChange("standard")}
+          style={units === "standard" ? activeUnitStyle : null}
+        >
+          °F
+        </li>
+        <li
+          onClick={() => onMetricChange("metric")}
+          style={units === "metric" ? activeUnitStyle : null}
+        >
+          °C
+        </li>
       </Units>
     </Container>
   );
@@ -39,8 +67,9 @@ const Forcast = styled.div`
 const Units = styled.div`
   > li {
     display: inline-block;
-    background-color: #303030;
-    color: white;
+    /* background-color: #17202a; */
+    border: 2px solid #17202a;
+    color: #17202a;
     margin: 0 0.5rem;
     width: 25px;
     padding: 0.5rem;
