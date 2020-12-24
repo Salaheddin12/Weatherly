@@ -11,6 +11,7 @@ export const Container = styled.div`
   margin: 1rem 0;
   max-height: 250px;
   border-radius: 10px;
+  box-shadow:  2px 2px 10px #17202a;
   box-sizing:border-box;
   font-family: "Fira sans",sans-serif;
   * {

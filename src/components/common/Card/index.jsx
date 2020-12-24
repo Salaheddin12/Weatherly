@@ -39,11 +39,12 @@ const Card = styled.div`
   width: 130px;
   text-align: center;
   padding: 0.5rem 0;
-  margin: 1rem 0;
+  margin: 1rem;
   max-height: 250px;
   border-radius: 10px;
   letter-spacing: 1px;
   font-family: "Epilogue";
+  box-shadow:  2px 2px 10px #17202a;
   * {
     display: block;
   }

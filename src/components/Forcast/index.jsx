@@ -25,5 +25,4 @@ const Container = styled.div`
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  justify-content: space-between;
 `;
