@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import styled from "styled-components";
 
-export default ({ onForcastChange, onMetricChange, units ,forcast }) => {
-
+export default ({ onForcastChange, onMetricChange, units, forcast }) => {
   const onSelect = (Value) => {
     onForcastChange(Value);
   };

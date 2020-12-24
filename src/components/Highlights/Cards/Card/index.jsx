@@ -6,28 +6,30 @@ export default ({ title, value, description }) => {
     switch (title) {
       case "Wind Status":
         return "km/h";
-        break;
       case "Rain":
         return "%";
-        break;
       case "Visibility":
         return "km";
-        break;
       default:
-        return ''
-        break;
+        return "";
     }
   };
   const renderDescription = () => {
     if (title === "Air Quality") {
-      if (value < 50) return "Good";
-      else if (value > 50 && value <= 100) return "Moderate";
-      else if (value > 100 && value <= 150)
-        return "Unhealthy for Sensitive Groups";
-      else if (value > 150 && value <= 200) return "Unhealthy";
-      else if (value > 200 && value <= 300) return "Very Unhealthy";
-      else return "Hazardous";
-    } else return description;
+      switch (value) {
+        case 1:
+          return "Good";
+        case 2:
+          return "Fair";
+        case 3:
+          return "Moderate";
+        case 4:
+          return "Poor";
+        default:
+          return "Very Poor";
+      }
+    }
+    return description;
   };
   return (
     <Container>

@@ -46,7 +46,7 @@ export default ({ coord }) => {
         onForcastChange={setForcastFilter}
       />
       <Forcast forcast={forcast} daily={dailyData} hourly={hourlyData} />
-      <Highlights current={currentData} />
+      <Highlights coord={coord} current={currentData} />
     </Main>
   );
 };

@@ -9,12 +9,12 @@ export default ({ sunrise, sunset }) => {
     <Container>
       <h6>Sunrise & Sunset</h6>
       <span>
-        <img src={Sunrise} />
-        <h3>{formateDate(sunrise, "HOURS")} AM</h3>
+        <img src={Sunrise} alt="sunrise"/>
+        <h3>{formateDate(sunrise, "HOURS")}</h3>
       </span>
       <span>
-        <img src={Sunset} />
-        <h3>{formateDate(sunset, "HOURS")} PM</h3>
+        <img src={Sunset} alt='sunset' />
+        <h3>{formateDate(sunset, "HOURS")}</h3>
       </span>
     </Container>
   );
